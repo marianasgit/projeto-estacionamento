@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow_back">#FEDF73</color>
     <color name="background_blue">#07679C</color>
+    <color name="background_card">#D7D7D7</color>
+    <color name="pesquisa">#E9E6E6</color>
 </resources>
