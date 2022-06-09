@@ -64,7 +64,11 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/btnPesquisar"
+=======
+        android:id="@+id/btnPesquisar"    
+>>>>>>> 78b51e4ad59b3b30c04d77f1955d05211b0f79f9
         android:layout_width="50dp"
         android:layout_height="35dp"
         android:background="@mipmap/icone_pesquisa"
