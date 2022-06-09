@@ -19,6 +19,28 @@ class VeiculosDisponiveis : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityVeiculosDisponiveisBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_veiculos_disponiveis)
+        
+        binding.btnPesquisar.setOnClickLIstener { getVeiculo() }
+    }
+    
+    private fun getVeiculo() {
+        val url = "http://10.0.2.2  /Projeto-Estacionamento_Teste_DB"
+        val retrofitClient = retrofitInstance(url)
+        val endpoint = retrofitClient.create(Endpoint::class.java)
+        val placa = binding.pesquisar.text.toString()
+        
+        endpoint.getVeiculo(placa).enqueue(object: Callback <JsonObject> {
+            override fun onResponse(call: Call<JsonObject>, response: Response<JsonObject>){
+                val viewPlaca = response.body()?.get("message")?.asString
+                val nomeCliente = response.body()?.get("message")?.asString
+                val valorTotal = response.body()?.get("message")?.asString
+                Picasso.get().load(viewPlaca).into(binding.card_placa)
+            }
+            
+            override fun onFailure(call: Call<JsonObject>, t: Throwable) {
+                Toast.makeText(applicationContext, "Erro ao carregar veículo", Toast.LENGTH_LONG)
+            }
+        }
     }
 
 
