@@ -21,7 +21,6 @@ class VeiculosDisponiveis : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityVeiculosDisponiveisBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_veiculos_disponiveis)
-<<<<<<< HEAD
 
         binding.btnPesquisar.setOnClickListener { getVeiculo() }
     }
@@ -47,9 +46,6 @@ class VeiculosDisponiveis : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Placa não encontrada", Toast.LENGTH_LONG)
             }
         })
-
-
-=======
         
         binding.btnPesquisar.setOnClickLIstener { getVeiculo() }
     }
@@ -72,7 +68,6 @@ class VeiculosDisponiveis : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Erro ao carregar veículo", Toast.LENGTH_LONG)
             }
         }
->>>>>>> 78b51e4ad59b3b30c04d77f1955d05211b0f79f9
     }
 
 
