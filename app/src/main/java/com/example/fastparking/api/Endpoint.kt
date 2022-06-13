@@ -6,6 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface Endpoint {
-    @GET ("/api/registros/{placa}")
+    @GET ("/api/registros/placa/{placa_veiculo}")
     fun getRegistro(@Path(value="placa") placa : String) : Call<JsonObject>
 }
