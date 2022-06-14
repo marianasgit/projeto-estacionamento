@@ -167,50 +167,34 @@
                 android:id="@+id/nomeCliente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text=""
-=======
                 android:text="Ana Maria"
                 android:textSize="20sp"
->>>>>>> 0889b3711dcb87f00f9e78834c4c8eadc49885e8
                 android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/modeloVeiculo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text=""
-=======
                 android:text="Placa: ALD-12S5"
                 android:textSize="15sp"
->>>>>>> 0889b3711dcb87f00f9e78834c4c8eadc49885e8
                 android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/tempoTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text=""
-=======
                 android:textAlignment="center"
                 android:text="Tempo: \n 02:00"
                 android:textSize="15sp"
->>>>>>> 0889b3711dcb87f00f9e78834c4c8eadc49885e8
                 android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/valorTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:text=""
-=======
                 android:textAlignment="center"
                 android:textSize="15sp"
                 android:text="Total a pagar: \n R$20,00"
->>>>>>> 0889b3711dcb87f00f9e78834c4c8eadc49885e8
                 android:textColor="@color/black"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

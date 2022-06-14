@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun abrirHomePage() {
 
-        val intent = Intent(this, VeiculosDisponiveis::class.java)
+        val intent = Intent(this, HomePage::class.java)
         startActivity(intent)
         finish()
     }

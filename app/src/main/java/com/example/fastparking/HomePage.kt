@@ -9,8 +9,8 @@ class HomePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
-/*
-        val btnPesquisar: Button = findViewById(R.id.btnPesquisar)
+
+        val btnPesquisarHome: Button = findViewById(R.id.btnPesquisarHome)
 
 
         fun abrirRegistro() {
@@ -20,8 +20,8 @@ class HomePage : AppCompatActivity() {
             finish()
         }
 
-        btnPesquisar.setOnClickListener {
-            abrirRegistro();}*/
+        btnPesquisarHome.setOnClickListener {
+            abrirRegistro() }
         }
 
 
